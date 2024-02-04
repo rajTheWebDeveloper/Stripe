@@ -12,7 +12,7 @@ const Submenu = () => {
 
   console.log("Man I am an anti Natalist",subMenuStatus)
   return (
-    <section style={{gridTemplateColumns:"1fr 1fr"}} className={`${subMenuStatus?"absolute top-[70px] left-[50%] md:w-[70%] h-[180px] translate-x-[-50%] z-50 bg-slate-700 grid items-center px-20 text-white rounded-lg":'hidden'}`}>
+    <section style={{gridTemplateColumns:"1fr 1fr"}} className={`${subMenuStatus?"absolute top-[70px] left-[50%] hidden md:w-[70%] md:h-[180px] translate-x-[-50%] z-50 bg-slate-700 md:grid items-center px-20 text-white rounded-lg":'hidden'}`}>
       {links.map((items)=>
       {
         let {label,icon,url}=items
